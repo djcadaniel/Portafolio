@@ -1,0 +1,35 @@
+/*-----------*\
+    DISEÑO
+\*-----------*/
+
+// BODY
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: $fontTitle;
+    font-weight: 300;
+}
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw;
+    background-color: $azul;
+}
+.header a{
+    margin: 0;
+    padding: 0;
+}
+.header__img{
+    height: 50px;
+}
+section{
+    color: red;
+}
