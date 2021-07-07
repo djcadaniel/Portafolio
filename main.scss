@@ -1,9 +1,14 @@
 //Librerias
 @import "lib/variables";
+@import "lib/mixins";
 
 //Elementos base
 @import "base/botones";
+@import "base/redes";
 
 //Layout
 @import "layout/layout";
 @import "layout/nav";
+@import "layout/hero";
+@import "layout/about";
+@import "layout/ability";

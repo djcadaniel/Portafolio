@@ -1,5 +1,51 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+/*---------------------*\
+        $MIXINS
+\*---------------------*/
+/*--------------------*\
+        $BOTONES
+\*--------------------*/
+.hero__left--btn {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 2% 3%;
+  font-weight: 600;
+  color: #031851;
+  background-color: #00ff82;
+}
+
+.redes-container {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  top: 75%;
+  list-style: none;
+}
+
+.redes-container li:hover {
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+}
+
+.redes-container li a {
+  color: white;
+  -webkit-transition-property: color;
+  transition-property: color;
+}
+
+.redes-container li a:hover {
+  color: #00ff82;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
 /*-----------*\
     DISEÑO
 \*-----------*/
@@ -7,7 +53,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -18,31 +64,46 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins";
   font-weight: 300;
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(49%, #031851), color-stop(99%, #01397d));
+  background: linear-gradient(90deg, #020024 0%, #031851 49%, #01397d 99%);
 }
 
 header {
   position: relative;
+  width: 100%;
+  padding: 2% 0;
+  height: 20vh;
+}
+
+.header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2vw;
-  background-color: #031851;
+  padding: 1vw 0;
 }
 
-.header a {
-  margin: 0;
-  padding: 0;
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .header__img {
+  position: fixed;
   height: 50px;
 }
 
-section {
-  color: red;
+main {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid yellow;
+}
+
+.main-container {
+  width: 100%;
+  border: 1px solid white;
 }
 
 nav {
@@ -89,4 +150,214 @@ nav ul li a span {
   font-weight: bold;
   font-size: 17px;
   color: white;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 0 5%;
+  margin: 0 auto;
+  height: 80vh;
+  border: 1px solid green;
+}
+
+.hero__left {
+  padding: 7vw;
+  width: 60%;
+}
+
+.hero__left p {
+  line-height: 2.2rem;
+  color: white;
+}
+
+.hero__left--p1 {
+  margin-bottom: 10px;
+}
+
+.hero__left--p2 {
+  margin-top: 15px;
+  margin-bottom: 9%;
+}
+
+.hero__left--title {
+  text-shadow: 2px 2px 1px #0049f8;
+  line-height: 4.8rem;
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #00ff82;
+}
+
+.hero__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0;
+  width: 40%;
+}
+
+.hero__right--img {
+  height: 80vh;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0 5%;
+  margin: 0 auto;
+  height: 100vh;
+  background-image: url("../img/sello.png");
+  background-size: 30%;
+  background-position: top left;
+  background-position-x: 5%;
+  background-repeat: no-repeat;
+  border: 1px solid green;
+}
+
+.about__content-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+.about__content-img--img {
+  height: 60vh;
+}
+
+.about__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  color: white;
+}
+
+.about__description h1 {
+  text-align: left;
+}
+
+.about__description--number {
+  color: #00ff82;
+}
+
+.about__description p {
+  text-align: justify;
+}
+
+.ability {
+  width: 100%;
+  height: 100vh;
+  padding: 0 5%;
+  margin: 0 auto;
+  border: 1px solid green;
+  background-color: whitesmoke;
+}
+
+.ability h1 {
+  color: #031851;
+}
+
+.ability h1 span {
+  color: #00ff82;
+}
+
+.ability__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 1fr 5px 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ability__container > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.ability__container > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.ability__container > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.ability__container > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+
+.ability__container > *:nth-child(5) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 9;
+}
+
+.ability__container > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.ability__container > *:nth-child(7) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+.ability__container > *:nth-child(8) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+
+.ability__container > *:nth-child(9) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+}
+
+.ability__container > *:nth-child(10) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 9;
+}
+
+.ability__container--title {
+  color: gray;
+}
+
+.ability__container--img {
+  height: 70px;
 }

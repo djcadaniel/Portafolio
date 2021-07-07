@@ -6,6 +6,8 @@
 *{
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 html{
@@ -15,21 +17,36 @@ body{
     font-size: 1.6rem;
     font-family: $fontTitle;
     font-weight: 300;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,24,81,1) 49%, rgba(1,57,125,1) 99%);
 }
 header{
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    padding: 2vw;
-    background-color: $azul;
+    width: 100%;
+    padding: 2% 0;
+    height: 20vh;
 }
-.header a{
-    margin: 0;
-    padding: 0;
+.header-container{
+    display: flex;
+    justify-content: space-between; 
+    padding: 1vw 0;
+}
+.container{
+    @include max-width;
 }
 .header__img{
+    position: fixed;
     height: 50px;
 }
-section{
-    color: red;
+.header__img:hover{
+    // transition: transform 1s;
+    // transform: skew(10deg);
+}
+main{
+    width: 100%;
+    margin: 0 auto;
+    border:1px solid yellow;
+}
+.main-container{
+    width: 100%;
+    border:1px solid white;
 }

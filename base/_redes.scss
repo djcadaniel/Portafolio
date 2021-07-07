@@ -1,0 +1,23 @@
+.redes{
+
+}
+.redes-container{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    top: 75%;
+    list-style: none;
+}
+.redes-container li:hover{
+    transform: scale(1.6);
+}
+.redes-container li a{
+    color: white;
+    transition-property: color;
+    
+}
+.redes-container li a:hover{
+    color:$verde;
+    transition-duration: .8s;
+}

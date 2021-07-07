@@ -1,0 +1,17 @@
+/*---------------------*\
+        $MIXINS
+\*---------------------*/
+
+@mixin max-width($max: 1300px){
+    max-width: $max;
+    margin: 0 auto;
+}
+@mixin centrarh(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin centrarv(){
+    display: flex;
+    justify-content: center;
+}
