@@ -1,0 +1,31 @@
+.work{
+    padding: 0 5%;
+    color: white;
+    height: 100vh;
+}
+.work h1{
+    padding: 3% 0 0 0;
+}
+.splide{
+    background-color: green;
+}
+.splide--content{
+    display: flex;
+    height: 80vh;
+    background-color: yellow;
+}
+.splide__left{
+    width: 40%;
+    margin: 0 auto;
+}
+.splide__right{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+    background-color: blue;
+}
+.splide__right img{
+    max-width: 100%;
+    object-fit: cover;
+}
