@@ -3,51 +3,68 @@
 \*-----------*/
 
 // BODY
-*{
+* {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-html{
+
+html {
     font-size: 62.5%;
 }
-body{
+
+body {
+    width: 100%;
     font-size: 1.6rem;
     font-family: $fontTitle;
     font-weight: 300;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,24,81,1) 49%, rgba(1,57,125,1) 99%);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(3, 24, 81, 1) 49%, rgba(1, 57, 125, 1) 99%);
 }
-header{
+
+header {
     position: relative;
     width: 100%;
+    min-width: 320px;
+    margin: 0 auto;
     padding: 2% 0;
     height: 20vh;
 }
-.header-container{
+
+.header-container {
+    width: 100%;
+    min-width: 290px;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     padding: 1vw 0;
 }
-.container{
+
+.container {
     @include max-width;
+    min-width: 320px;
 }
-.header__img{
+
+.header__img {
     position: fixed;
     height: 50px;
 }
-.header__img:hover{
+
+.header__img:hover {
     // transition: transform 1s;
     // transform: skew(10deg);
 }
-main{
+
+main {
     width: 100%;
+    min-width: 320px;
     margin: 0 auto;
-    border:1px solid yellow;
+    border: 1px solid yellow;
 }
-.main-container{
+
+.main-container {
     width: 90%;
+    min-width: 290px;
     margin: 0 auto;
-    border:1px solid white;
+    border: 1px solid white;
 }

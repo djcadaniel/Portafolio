@@ -1,32 +1,46 @@
-nav{
+nav {
     position: relative;
     display: flex;
     align-items: center;
+    width: 100%;
+    min-width: 290px;
     color: $white;
 }
-nav ul{
+
+nav ul {
     display: flex;
     list-style: none;
 }
-nav ul li{
+
+@media only screen and (max-width:768px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+nav ul li {
     margin-right: 15px;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: white;
 }
-nav ul li a span{
+
+nav ul li a span {
     color: $verde;
 }
-.nav__ul--a{
+
+.nav__ul--a {
     text-decoration: none;
     font-weight: 500;
     padding: 0px 15px;
-    border-radius:10px;
+    border-radius: 10px;
     color: $azul;
     background-color: $verde;
 }
-.nav__ul--a span i{
+
+.nav__ul--a span i {
     font-weight: bold;
     font-size: 17px;
     color: white;
