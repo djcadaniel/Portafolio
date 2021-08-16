@@ -1,59 +1,80 @@
-.work{
+.work {
     padding: 0 5%;
     color: white;
     height: 100vh;
 }
-.work h1{
+
+.work h1 {
     padding: 3% 0 0 0;
 }
-.splide{
-    
-}
-.splide--content{
+
+.splide {}
+
+.splide--content {
     display: flex;
-    height: 80vh;
+    height: 90vh;
 }
-.splide__left--boceto{
-    position:relative;
+
+.splide__left--boceto {
+    position: relative;
     display: flex;
     align-items: center;
     width: 100%;
 }
-.splide__left--contentImg{
+
+.splide__left--contentImg {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
     height: 100%;
     width: 100%;
     padding-right: 10%;
+    // background-color: red;
 }
-.splide__left--contentImg img{
+
+.splide__left--contentImg img {
     width: 600px;
-    height:500px;
+    height: 500px;
     object-fit: cover;
     border: 5px solid $white;
 }
-.splide__left{
+
+.splide__left--contentImg button {
+    padding: 5px 5%;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: green;
+}
+
+.splide__left {
     position: absolute;
-    top:25%;
+    top: 25%;
     left: 5%;
     bottom: 0;
     width: 50%;
     margin: 0 auto;
-}.splide__left p{
+}
+
+.splide__left p {
     font-size: 1.3rem;
 }
-.splide__left h1{
+
+.splide__left h1 {
     padding: 0;
     font-size: 2rem;
     font-weight: 400;
     margin-bottom: 5px;
     color: $verde;
 }
-.splide__left span{
+
+.splide__left span {
     font-size: 1.3rem;
 }
-.splide__left--decription{
+
+.splide__left--decription {
     width: 85%;
     padding: 2.5%;
     margin-bottom: 10px;
@@ -62,5 +83,5 @@
     text-align: justify;
     font-size: 1.2rem;
     color: $azul;
-    background-color : $white;
+    background-color: $white;
 }

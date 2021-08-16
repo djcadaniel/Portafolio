@@ -1,4 +1,4 @@
-.ability{
+.ability {
     width: 100%;
     height: 100vh;
     padding: 0 5%;
@@ -6,23 +6,27 @@
     border: 1px solid green;
     background-color: whitesmoke;
 }
-.ability h1{
+
+.ability h1 {
     color: $azul;
     padding: 3% 0 0 0;
 }
-.ability h1 span{
+
+.ability h1 span {
     color: $verde;
 }
-.father-container{
+
+.father-container {
     display: flex;
     align-items: center;
     height: 83%;
     // border: 1px solid blue;
 }
-.ability__container{
+
+.ability__container {
     display: grid;
     grid-template-columns: repeat(9, 10%);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-gap: 5px;
     justify-content: center;
     align-items: center;
@@ -30,21 +34,26 @@
     width: 100%;
     // border: 1px solid red;
 }
-.ability__container--title{
+
+.ability__container--title {
     font-size: 1.3rem;
     color: gray;
 }
-.ability__container--img{
-    height: 90px;
+
+.ability__container--img {
+    // height: 90px;
+    max-width: 100%;
     margin-bottom: 8px
 }
+
 @for $i from 1 to 11 {
-    .ability__container--#{$i}{
+    .ability__container--#{$i} {
         @include itemGrid;
         text-align: center;
     }
 }
-.ability__container--button{
+
+.ability__container--button {
     text-decoration: none;
     padding: 1% 13%;
     border-radius: 10px;
@@ -53,30 +62,39 @@
     color: $azul;
     background-color: $verde;
 }
-.ability__container--1{
-    @include positionGrid(2,3);
+
+.ability__container--1 {
+    @include positionGrid(2, 3);
 }
-.ability__container--2{
-    @include positionGrid(4,5);
+
+.ability__container--2 {
+    @include positionGrid(4, 5);
 }
-.ability__container--3{
-    @include positionGrid(6,7);
+
+.ability__container--3 {
+    @include positionGrid(6, 7);
 }
-.ability__container--4{
-    @include positionGrid(8,9);
+
+.ability__container--4 {
+    @include positionGrid(8, 9);
 }
-.ability__container--5{
-    @include positionGrid(1,2);
+
+.ability__container--5 {
+    @include positionGrid(1, 2);
 }
-.ability__container--6{
-    @include positionGrid(3,4);
+
+.ability__container--6 {
+    @include positionGrid(3, 4);
 }
-.ability__container--7{
-    @include positionGrid(5,6);
+
+.ability__container--7 {
+    @include positionGrid(5, 6);
 }
-.ability__container--8{
-    @include positionGrid(7,8);
+
+.ability__container--8 {
+    @include positionGrid(7, 8);
 }
-.ability__container--9{
-    @include positionGrid(9,10);
+
+.ability__container--9 {
+    @include positionGrid(9, 10);
 }

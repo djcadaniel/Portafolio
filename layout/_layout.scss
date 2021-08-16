@@ -32,12 +32,28 @@ header {
     height: 20vh;
 }
 
+@media only screen and (max-width:768px) {
+    header {
+        padding: 0;
+    }
+}
+
 .header-container {
     width: 100%;
     min-width: 290px;
     display: flex;
     justify-content: space-between;
     padding: 1vw 0;
+}
+
+@media only screen and (max-width:768px) {
+    .header-container {
+        padding: 15px 0;
+    }
+
+    .header-container a {
+        margin: 10px 0 0 25px;
+    }
 }
 
 .container {
@@ -48,6 +64,13 @@ header {
 .header__img {
     position: fixed;
     height: 50px;
+}
+
+@media only screen and (max-width:768px) {
+    .header__img {
+        position: fixed;
+        height: 60px;
+    }
 }
 
 .header__img:hover {

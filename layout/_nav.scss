@@ -2,6 +2,7 @@ nav {
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     width: 100%;
     min-width: 290px;
     color: $white;
@@ -13,8 +14,17 @@ nav ul {
 }
 
 @media only screen and (max-width:768px) {
+    nav {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
     nav ul {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
