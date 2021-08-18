@@ -12,19 +12,20 @@ document.addEventListener( 'DOMContentLoaded', function () {
         autoplay:true,
         interval:2000,
         // focus    : 'center',
-        gap: 15,
+        gap: 0,
         easing: 'ease',
         arrows: true,
+        pagination: false,
         pauseOnHover: true,
         keyboard:true,
         // direction  : 'ttb',
         // heightRatio: 0.6,
         cover: false,
         breakpoints: {
-            640: {
-                perPage: 2,
+            768: {
+                perPage: 1,
             },
-            480:{
+            528:{
                 perPage:1
             }
         }

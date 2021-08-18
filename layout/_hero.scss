@@ -57,9 +57,16 @@
 
     .hero__left {
         width: 100%;
+        text-align: center;
     }
 
     .hero__right {
         display: none;
+    }
+}
+
+@media only screen and(max-width:520px) {
+    .hero {
+        font-size: 1.4rem;
     }
 }

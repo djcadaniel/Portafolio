@@ -2,30 +2,30 @@
         $MIXINS
 \*---------------------*/
 
-@mixin max-width($max: 1300px){
+@mixin max-width($max: 1300px) {
     max-width: $max;
     margin: 0 auto;
 }
-@mixin centrarh(){
+
+@mixin centrarh() {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-@mixin centrarv(){
+
+@mixin centrarv() {
     display: flex;
     justify-content: center;
 }
-@mixin positionGrid($start, $end){
+
+@mixin positionGrid($start, $end) {
     grid-column-start: $start;
     grid-column-end: $end;
 }
-@mixin itemGrid{
+
+@mixin itemGrid {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // background-color: aqua;
-}
-@mixin tablet(){
-    
 }

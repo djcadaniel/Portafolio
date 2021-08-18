@@ -98,3 +98,84 @@
 .ability__container--9 {
     @include positionGrid(9, 10);
 }
+
+@media only screen and(max-width:528px) {
+    .ability {
+        width: 100%;
+        height: auto;
+        padding: 0 5%;
+        margin: 0 auto;
+        border: 1px solid green;
+        background-color: rgb(209, 209, 209);
+    }
+
+    .ability h1 {
+        color: $azul;
+        padding: 3% 0 0 0;
+    }
+
+    .ability h1 span {
+        color: $verde;
+    }
+
+    .father-container {
+        display: flex;
+        align-items: center;
+        height: auto;
+    }
+
+    .ability h1 {
+        font-size: 2.1rem;
+    }
+
+    .ability__container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 5px;
+        height: auto;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .ability__container--img {
+        max-width: 25%;
+        margin-bottom: 8px
+    }
+
+    .ability__container--1 {
+        @include positionGrid(1, 3);
+    }
+
+    .ability__container--2 {
+        @include positionGrid(3, 5);
+    }
+
+    .ability__container--3 {
+        @include positionGrid(2, 4);
+    }
+
+    .ability__container--4 {
+        @include positionGrid(1, 3);
+    }
+
+    .ability__container--5 {
+        @include positionGrid(3, 5);
+    }
+
+    .ability__container--6 {
+        @include positionGrid(2, 4);
+    }
+
+    .ability__container--7 {
+        @include positionGrid(1, 3);
+    }
+
+    .ability__container--8 {
+        @include positionGrid(3, 5);
+    }
+
+    .ability__container--9 {
+        @include positionGrid(2, 4);
+    }
+}

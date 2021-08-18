@@ -126,7 +126,7 @@
 .splide__arrow {
     position: absolute;
     z-index: 1;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
     width: 2em;
     height: 2em;
