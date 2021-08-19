@@ -1041,6 +1041,7 @@ nav ul li a span {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  height: 90vh;
 }
 
 .splide__left--contentImg {
@@ -1057,7 +1058,7 @@ nav ul li a span {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 100%;
+  height: 90vh;
   width: 100%;
   padding-right: 5%;
 }
@@ -1174,7 +1175,7 @@ nav ul li a span {
 
   .splide__left--contentImg img {
     width: 100%;
-    height: 500px;
+    height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
     border: none;
