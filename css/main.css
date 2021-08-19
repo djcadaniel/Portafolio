@@ -297,11 +297,14 @@ nav ul li a span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   min-width: 280px;
+  height: 100vh;
   padding: 0 5%;
   margin: 0 auto;
-  height: 100vh;
   background-image: url("../img/sello.png");
   background-size: 30%;
   background-position: top left;
@@ -356,6 +359,16 @@ nav ul li a span {
 
 @media only screen and (max-width: 768px) {
   .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-size: 1.5rem;
   }
 
@@ -369,6 +382,7 @@ nav ul li a span {
 
   .about__description {
     width: 60%;
+    padding-top: 5%;
   }
 }
 @media only screen and (max-width: 528px) {
