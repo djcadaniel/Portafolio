@@ -62,11 +62,11 @@ html {
 
 body {
   width: 100%;
+  min-width: 320px;
   font-size: 1.6rem;
   font-family: "Poppins";
   font-weight: 300;
-  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(49%, #031851), color-stop(99%, #01397d));
-  background: linear-gradient(90deg, #020024 0%, #031851 49%, #01397d 99%);
+  background-color: #031851;
 }
 
 header {
@@ -130,7 +130,7 @@ main {
 
 .main-container {
   width: 90%;
-  min-width: 290px;
+  min-width: 280px;
   margin: 0 auto;
   border: 1px solid white;
 }
@@ -298,6 +298,7 @@ nav ul li a span {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  min-width: 280px;
   padding: 0 5%;
   margin: 0 auto;
   height: 100vh;
@@ -400,6 +401,7 @@ nav ul li a span {
 }
 .ability {
   width: 100%;
+  min-width: 280px;
   height: 100vh;
   padding: 0 5%;
   margin: 0 auto;
@@ -1002,9 +1004,12 @@ nav ul li a span {
   }
 }
 .work {
+  width: 100%;
+  min-width: 280px;
   padding: 0 5%;
   color: white;
   height: 100vh;
+  background-color: red;
 }
 
 .work h1 {
@@ -1013,6 +1018,10 @@ nav ul li a span {
 
 .work h1 span {
   color: #00ff82;
+}
+
+.splide {
+  width: 100%;
 }
 
 .splide--content {

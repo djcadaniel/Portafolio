@@ -1,7 +1,10 @@
 .work {
+    width: 100%;
+    min-width: 280px;
     padding: 0 5%;
     color: white;
     height: 100vh;
+    background-color: red;
 }
 
 .work h1 {
@@ -12,7 +15,9 @@
     color: $verde;
 }
 
-.splide {}
+.splide {
+    width: 100%;
+}
 
 .splide--content {
     display: flex;
