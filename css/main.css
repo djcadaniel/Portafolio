@@ -1168,7 +1168,7 @@ nav ul li a span {
     height: 500px;
     -o-object-fit: cover;
        object-fit: cover;
-    border: 5px solid white;
+    border: none;
     -webkit-filter: grayscale(80%);
             filter: grayscale(80%);
   }
