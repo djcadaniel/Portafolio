@@ -71,16 +71,34 @@ body {
 
 header {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   min-width: 320px;
   margin: 0 auto;
-  padding: 2% 0;
-  height: 20vh;
+  height: 100px;
+}
+
+.header__img {
+  position: fixed;
+  top: 25px;
+  height: 50px;
 }
 
 @media only screen and (max-width: 768px) {
   header {
+    position: fixed;
+    height: 60px;
     padding: 0;
+  }
+
+  .header__img {
+    height: 40px;
+    top: 10px;
   }
 }
 .header-container {
@@ -92,7 +110,6 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1vw 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -110,18 +127,6 @@ header {
   min-width: 320px;
 }
 
-.header__img {
-  position: fixed;
-  height: 50px;
-}
-
-@media only screen and (max-width: 768px) {
-  .header__img {
-    position: fixed;
-    height: 50px;
-    z-index: 50;
-  }
-}
 main {
   width: 100%;
   min-width: 320px;
@@ -132,7 +137,6 @@ main {
   width: 90%;
   min-width: 280px;
   margin: 0 auto;
-  border: 1px solid white;
 }
 
 nav {
@@ -151,6 +155,15 @@ nav {
   color: white;
 }
 
+.nav__toggle {
+  display: none;
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 20px;
+}
+
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,17 +173,13 @@ nav ul {
 
 @media only screen and (max-width: 768px) {
   nav {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0;
-    margin: 0;
-  }
-
-  nav ul {
+    position: fixed;
+    left: 100%;
+    -webkit-transition: left 0.5s;
+    transition: left 0.5s;
+    top: 0px;
+    bottom: 0;
+    width: 70%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -181,10 +190,46 @@ nav ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0;
+    margin: 0;
+    background: #010537;
+    overflow-y: auto;
+  }
+
+  .nav__toggle {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 0;
+    line-height: 60px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  nav ul {
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+
+  .nav__ul--visible {
+    left: 20%;
   }
 }
 nav ul li {
   margin-right: 15px;
+  max-width: content;
 }
 
 nav ul li a {
@@ -211,6 +256,14 @@ nav ul li a span {
   color: white;
 }
 
+@media only screen and (max-width: 768px) {
+  nav ul li {
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+    padding: 0;
+  }
+}
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -221,8 +274,7 @@ nav ul li a span {
   width: 100%;
   padding: 0 5%;
   margin: 0 auto;
-  height: 80vh;
-  border: 1px solid green;
+  height: calc(100vh - 100px);
 }
 
 .hero__left {
@@ -277,6 +329,7 @@ nav ul li a span {
         -ms-flex-direction: column;
             flex-direction: column;
     font-size: 1.5rem;
+    height: 100vh;
   }
 
   .hero__left {
@@ -310,7 +363,6 @@ nav ul li a span {
   background-position: top left;
   background-position-x: 5%;
   background-repeat: no-repeat;
-  border: 1px solid green;
 }
 
 .about__content-img {
@@ -419,7 +471,6 @@ nav ul li a span {
   height: 100vh;
   padding: 0 5%;
   margin: 0 auto;
-  border: 1px solid green;
   background-color: whitesmoke;
 }
 
@@ -809,7 +860,6 @@ nav ul li a span {
     height: auto;
     padding: 0 5%;
     margin: 0 auto;
-    border: 1px solid green;
     background-color: #d1d1d1;
   }
 

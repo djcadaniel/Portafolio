@@ -14,8 +14,11 @@
     <header>
         <div class="header-container container">
             <a href=""><img class="header__img" src="./src/img/icons/logo.svg" alt="Logo de Daniel Castro Alejos"></a>
-            <nav>
-                <ul>
+            <nav class="nav nav__ul--visible">
+                <button class="nav__toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav__ul">
                     <li><a href=""><span >01.</span> Acerca de mí</a></li>
                     <li><a href=""><span>02.</span>Habilidades</a></li>
                     <li><a href=""><span>03.</span>Trabajos</a></li>
@@ -162,5 +165,6 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script src="js/splide.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>

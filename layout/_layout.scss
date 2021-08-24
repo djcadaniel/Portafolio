@@ -27,16 +27,27 @@ body {
 
 header {
     position: relative;
+    display: flex;
+    justify-content: center;
     width: 100%;
     min-width: 320px;
     margin: 0 auto;
-    padding: 2% 0;
-    height: 20vh;
+    height: 100px;
 }
-
+.header__img{
+    position: fixed;
+    top: 25px;
+    height: 50px;
+}
 @media only screen and (max-width:768px) {
     header {
+        position: fixed;
+        height: 60px;
         padding: 0;
+    }
+    .header__img{
+        height: 40px;
+        top: 10px;
     }
 }
 
@@ -45,7 +56,6 @@ header {
     min-width: 290px;
     display: flex;
     justify-content: space-between;
-    padding: 1vw 0;
 }
 
 @media only screen and (max-width:768px) {
@@ -63,19 +73,6 @@ header {
     min-width: 320px;
 }
 
-.header__img {
-    position: fixed;
-    height: 50px;
-}
-
-@media only screen and (max-width:768px) {
-    .header__img {
-        position: fixed;
-        height: 50px;
-        z-index: 50;
-    }
-}
-
 main {
     width: 100%;
     min-width: 320px;
@@ -86,5 +83,4 @@ main {
     width: 90%;
     min-width: 280px;
     margin: 0 auto;
-    border: 1px solid white;
 }
