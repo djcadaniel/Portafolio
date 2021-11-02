@@ -91,6 +91,7 @@ header {
   }
 
   .header__img {
+    position: absolute;
     height: 40px;
     top: 10px;
   }
@@ -166,7 +167,7 @@ nav ul {
     transition: left 0.5s;
     top: 0px;
     bottom: 0;
-    width: 70%;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -197,7 +198,7 @@ nav ul {
   }
 
   .nav__ul--visible {
-    left: 20%;
+    left: 0%;
   }
 }
 nav ul li {
@@ -294,11 +295,11 @@ nav ul li a span {
     padding-top: 18%;
     justify-content: flex-start;
     align-items: center;
+    z-index: -1;
   }
 
   .hero__left {
     width: 100%;
-    z-index: 10;
     padding-left: 0%;
   }
 
@@ -312,13 +313,13 @@ nav ul li a span {
     max-width: 100%;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 580px) {
   .hero {
     position: relative;
     flex-direction: column;
     font-size: 1.4rem;
     height: 100vh;
-    padding-top: 18%;
+    padding-top: 20%;
     justify-content: flex-start;
     align-items: center;
   }
@@ -331,6 +332,56 @@ nav ul li a span {
   }
   .hero__right--img {
     max-width: 100%;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .hero {
+    position: relative;
+    flex-direction: column;
+    font-size: 1.4rem;
+    height: 100vh;
+    padding-top: 18%;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .hero__right {
+    position: absolute;
+    bottom: -15%;
+    right: 0%;
+    width: 70%;
+  }
+  .hero__right--img {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .hero {
+    position: relative;
+    flex-direction: column;
+    font-size: 1.4rem;
+    height: 100vh;
+    padding-top: 18%;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .hero__right {
+    position: absolute;
+    bottom: -15%;
+    right: 0%;
+    width: 60%;
+  }
+  .hero__right--img {
+    max-width: 100%;
+  }
+
+  .hero__left--title {
+    text-shadow: 2px 2px 1px #0049f8;
+    line-height: 4.8rem;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #00ff82;
   }
 }
 .about {
